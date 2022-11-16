@@ -38,7 +38,7 @@ function Home() {
   const [newMovies, setNewMovies] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    fetch("https://my-moviz-backend-one-gamma.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setNewMovies(data.movies);
